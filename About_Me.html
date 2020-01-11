@@ -1,0 +1,208 @@
+<!-- What I must accomplish before a commit (going live):
+    I. Slightly Modify parameters.
+    II. Active download links.
+
+-->
+
+
+<!--Future Improvements:
+    I. Contact Information Pop-up
+        1. Basicly a business card.
+    II. Included Projects:
+        1. Typeset my paper in LaTex
+        2. Verify how to include my work from MUTR
+        3. Add descriptions
+    III.Top Words
+        1. References
+        2. Bio
+    IV. Type Resume and Cover Letter in LaTex
+    VI. Improve Color Pallet
+    
+    VII. Make the site live through Git-Hub (100% free).    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Personal Website V2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <style>
+        .footer-spacing {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .border-2 {
+            border-width: 2px !important;
+        }
+        .card:hover{
+            -webkit-box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
+            -o-box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
+            box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
+        }
+        .card{
+            background-color:#BEBBBB;
+        }
+
+        @media (min-width: 767px) {
+            .content-to-hide {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #07458C;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #D38A30;">
+        <!--Nav Bar-->
+        <a class="navbar-brand" href="#">Mark Van Selous</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Cover Letter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Resume</a>
+                </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#Recent_Projects">Recent Projects</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li> -->
+            <li class="nav-item active">
+                <a class="nav-link" href="../../HTML/HTML_Basics/Key_Tags.html">My Reference File</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#Contact_Information">Contact Information</a>
+            </li>
+            </ul>
+        </div>
+      </nav>
+      <br>
+      <br>
+    <!--Bio-->
+    <div class="containter text-center border-bottom border-2" style="background-color: #052F5F;">
+        <div class="row ml-2 mr-2">
+            <div class="col-sm-4 mt-2">
+                <div class="card text-center mt-2 mb-2 border-2 rounded-circle" style="background-color:#BEBBBB;">
+                    <img src="Project_Pictures/MarkVanSelous_Picture_SM.jpeg" class="mt-2 mb-2 ml-2 mr-2 rounded-circle img-fluid" alt="Picture of Mark Van Selous">
+                </div>
+            </div>
+            <div class="col-sm-8 mt-2 text-left">
+                <p class="text-center" style="color:white; font-family:EB Garamond; font-size: 64px;">Mark  <br class="content-to-hide"> Van Selous</p>
+                <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Tristique senectus et netus et malesuada fames ac. Lacus laoreet non curabitur gravida arcu. Leo a diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Mauris cursus mattis molestie a. Nisl rhoncus mattis rhoncus urna. Odio ut enim blandit volutpat maecenas volutpat. Ultricies mi quis hendrerit dolor magna eget est. Ut placerat orci nulla pellentesque dignissim enim sit. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Consectetur adipiscing elit pellentesque habitant morbi. Ultricies mi eget mauris pharetra et ultrices neque ornare. Bibendum est ultricies integer quis auctor elit sed vulputate. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Quis viverra nibh cras pulvinar mattis. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+            </div>
+        </div>
+    </div>
+      
+    <h2 id="Recent_Projects" class="ml-3 text-center mt-2" style="color:white">Recent Projects</h2>
+    <div class="container-fluid">
+        <div class="card-deck mt-4 ml-5 mr-5 text-left">
+            <div class="card border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/StatusBoard_Image.png" alt="StatusBoard GUI">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Reactor Status Board</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Tristique senectus et netus et malesuada fames ac. Lacus laoreet non curabitur gravida arcu. Leo a diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Mauris cursus mattis molestie a. Nisl rhoncus mattis rhoncus urna. Odio ut enim blandit volutpat maecenas volutpat. Ultricies mi quis hendrerit dolor magna eget est. Ut placerat orci nulla pellentesque dignissim enim sit. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Consectetur adipiscing elit pellentesque habitant morbi. Ultricies mi eget mauris pharetra et ultrices neque ornare. Bibendum est ultricies integer quis auctor elit sed vulputate. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Quis viverra nibh cras pulvinar mattis. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/StatusBoard_PUBLIC.zip" role="button">Download This Project!</a>
+                    <!-- <button type="button" class="btn btn-success float-right">Download This Project!</button> -->
+                </div>
+            </div>
+            <div class="card border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/Linac_Realignment_Magnet.png" alt="Realignment Magnet">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Linac Realignment Magnet</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Tristique senectus et netus et malesuada fames ac. Lacus laoreet non curabitur gravida arcu. Leo a diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Mauris cursus mattis molestie a. Nisl rhoncus mattis rhoncus urna. Odio ut enim blandit volutpat maecenas volutpat. Ultricies mi quis hendrerit dolor magna eget est. Ut placerat orci nulla pellentesque dignissim enim sit. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Consectetur adipiscing elit pellentesque habitant morbi. Ultricies mi eget mauris pharetra et ultrices neque ornare. Bibendum est ultricies integer quis auctor elit sed vulputate. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Quis viverra nibh cras pulvinar mattis. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/Linac_Magnet.zip" role="button">Download This Project!</a>
+                    <!-- <button type="button" class="btn btn-success float-right">Download This Project!</button> -->
+                </div>
+            </div>
+            <div class="card border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/Rod_Worth_Curve_Generator.png" alt="StatusBoard GUI">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Rod Worth Curve Generator</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Tristique senectus et netus et malesuada fames ac. Lacus laoreet non curabitur gravida arcu. Leo a diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Mauris cursus mattis molestie a. Nisl rhoncus mattis rhoncus urna. Odio ut enim blandit volutpat maecenas volutpat. Ultricies mi quis hendrerit dolor magna eget est. Ut placerat orci nulla pellentesque dignissim enim sit. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Consectetur adipiscing elit pellentesque habitant morbi. Ultricies mi eget mauris pharetra et ultrices neque ornare. Bibendum est ultricies integer quis auctor elit sed vulputate. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Quis viverra nibh cras pulvinar mattis. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/Integral_Worth_Curve_GUI.mlapp" role="button">Download This Project!</a>
+                    <!-- <button type="button" class="btn btn-success float-right">Download This Project!</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck mt-4 ml-5 mr-5 text-left">
+            <div class="card ml-4 border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/RunawayReaction_Simulation_Image.png" alt="StatusBoard GUI">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Reactivity Simulations</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Tristique senectus et netus et malesuada fames ac. Lacus laoreet non curabitur gravida arcu. Leo a diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Mauris cursus mattis molestie a. Nisl rhoncus mattis rhoncus urna. Odio ut enim blandit volutpat maecenas volutpat. Ultricies mi quis hendrerit dolor magna eget est. Ut placerat orci nulla pellentesque dignissim enim sit. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Consectetur adipiscing elit pellentesque habitant morbi. Ultricies mi eget mauris pharetra et ultrices neque ornare. Bibendum est ultricies integer quis auctor elit sed vulputate. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Quis viverra nibh cras pulvinar mattis. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/Reactivity_Simulations.zip" role="button">Download This Project!</a>
+                    <!-- <button type="button" class="btn btn-success float-right">Download This Project!</button> -->
+                </div>
+            </div>
+            <div class="card border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/QC_BV_Circuit.png" alt="Realignment Magnet">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Quantum Computing (Qiskit)</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Tristique senectus et netus et malesuada fames ac. Lacus laoreet non curabitur gravida arcu. Leo a diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Mauris cursus mattis molestie a. Nisl rhoncus mattis rhoncus urna. Odio ut enim blandit volutpat maecenas volutpat. Ultricies mi quis hendrerit dolor magna eget est. Ut placerat orci nulla pellentesque dignissim enim sit. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Consectetur adipiscing elit pellentesque habitant morbi. Ultricies mi eget mauris pharetra et ultrices neque ornare. Bibendum est ultricies integer quis auctor elit sed vulputate. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Quis viverra nibh cras pulvinar mattis. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/Quantum_Computing.zip" role="button">Download This Project!</a>
+                    <!-- <button type="button" class="btn btn-success float-right">Download This Project!</button> -->
+                </div>
+            </div>
+            <div class="card mr-4 border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/Quantum_Optics_Report_Image.png" alt="StatusBoard GUI">
+                <div class="card-body">
+                    <h5 class="card-title text-center">PHYS273 Project</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Tristique senectus et netus et malesuada fames ac. Lacus laoreet non curabitur gravida arcu. Leo a diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Mauris cursus mattis molestie a. Nisl rhoncus mattis rhoncus urna. Odio ut enim blandit volutpat maecenas volutpat. Ultricies mi quis hendrerit dolor magna eget est. Ut placerat orci nulla pellentesque dignissim enim sit. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Consectetur adipiscing elit pellentesque habitant morbi. Ultricies mi eget mauris pharetra et ultrices neque ornare. Bibendum est ultricies integer quis auctor elit sed vulputate. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Quis viverra nibh cras pulvinar mattis. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/Quantum_Optics.zip" role="button">Download This Project!</a>
+                    <!-- <button type="button" class="btn btn-success float-right">Download This Project!</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      <!-- <div class="container-fluid">
+          <p>test</p>
+      </div>
+      <button type="button" class="btn-primary">Primary</button> -->
+      <br>
+      <h2 id="Contact_Information" class="ml-3 text-center mt-2" style="color:white">Contact Information</h2>
+      <p class="ml-3 mt-2" style="color:white"> My Contact Information.<br>I dont think I will need both this section and a designated footer.</p>    
+
+      <div class="footer" style="background-color: #D38A30; color: white; font-size:small;"> <!--fixedd-bottom-->
+          <div class="container text-center">
+            <p class="footer-spacing">My Contact Information and other important info</p>  
+            <!-- <p class="footer-spacing">Created using Bootstrap and Django</p> -->
+          </div>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
