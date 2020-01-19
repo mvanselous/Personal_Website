@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mark Van Selous">
     <meta name="description" content="Mark Van Selous's Personal Website">
     <meta name="google-site-verification" content="3nYbeyI8Okn3QxoYsMa41S1t4tQffSCKH-7wPIdHy_M" />
+    <meta name="google-site-verification" content="nhe5gzymlL2P-In1sLUOVKOZF3ikn6GY0dNWz2WSIJs" />
     <title>Mark Van Selous</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -32,6 +34,10 @@
                 display: none;
             }
         }
+        .navbar {
+            font-size:20px;
+            margin-bottom:0px;
+        }
     </style>
 </head>
 <body style="background-color: #07458C;">
@@ -40,22 +46,18 @@
         <a class="navbar-brand" href="#">Mark Van Selous</a>
         <div class="collapse navbar-collapse ml-auto" id="collapsable">
             <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Cover Letter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Resume</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Project_Files/MarkVanSelous_Activities_Resume.docx">Resume</a>
                 </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#Recent_Projects">Recent Projects</a>
-            </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Recent_Projects">Recent Projects</a>
+                </li>
             </ul>
-        </div>
+        </div>        
         <button class="btn btn-primary mr-auto" data-target="#ContactInfo_Modal" data-toggle="modal">Contact Me!</button>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable" aria-controls="collapsable" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
       </nav>
       <div class="modal fade" id="ContactInfo_Modal" tabindex="-1">
           <div class="modal-dialog">
@@ -74,13 +76,11 @@
               </div>
           </div>
       </div>
-      <br>
-      <br>
     <!--Bio-->
-    <div class="containter text-center border-bottom border-2" style="background-color: #052F5F;">
+    <div class="containter text-center border-bottom border-2" style="background-color: #052F5F; padding-top:55px;">
         <div class="row ml-2 mr-2">
             <div class="col-sm-4 mt-2">
-                <div class="card text-center mt-2 mb-2 border-2 rounded-circle" style="background-color:#BEBBBB;">
+                <div class="card mt-2 mb-2 border-2 rounded-circle" style="background-color:#BEBBBB;">
                     <img src="Project_Pictures/MarkVanSelous_Picture_SM.jpeg" class="mt-2 mb-2 ml-2 mr-2 rounded-circle img-fluid" alt="Picture of Mark Van Selous">
                 </div>
             </div>
@@ -94,7 +94,7 @@
             </div>
         </div>
     </div>
-      
+    <!--Example Projects-->  
     <h2 id="Recent_Projects" class="ml-3 text-center mt-2" style="color:white; padding-top: 10px;">Recent Projects</h2>
     <div class="container-fluid">
         <div class="card-deck mt-4 ml-5 mr-5 text-left">
@@ -113,17 +113,13 @@
                 </div>
             </div>
             <div class="card border-white border-2 rounded">
-                <img class="card-img-top" src="Project_Pictures/Linac_Realignment_Magnet.png" alt="Realignment Magnet">
-                <div class="card-body d-flex flex-column">
-                    <div class="p-0">
-                        <h5 class="card-title text-center">LINAC Realignment Magnet</h5>
-                    </div>
-                    <div class="p-0">
-                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;I've designed and modeled a realignment magnet for one of the University of Maryland's linear accelerators. The magnet consists of a pair of aluminum clamps and four aluminum plates wrapped with several meters of copper wires.</p>
-                    </div>
+                <img class="card-img-top" src="Project_Pictures/RunawayReaction_Simulation_Image.png" alt="StatusBoard GUI">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Reactivity Simulations</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;I wrote a number of simulations for our nuclear reactor which were useful in calculating reactor specific parameters and in satisfying a question asked by the Nuclear Regulatory Committee in a Safety Analysis Report.</p>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-success float-right" href="Project_Files/Linac_Magnet.zip" role="button">Download This Project!</a>
+                    <a class="btn btn-success float-right" href="Project_Files/Reactivity_Simulations.zip" role="button">Download This Project!</a>
                 </div>
             </div>
             <div class="card border-white border-2 rounded">
@@ -143,13 +139,17 @@
         </div>
         <div class="card-deck mt-4 ml-5 mr-5 text-left">
             <div class="card border-white border-2 rounded">
-                <img class="card-img-top" src="Project_Pictures/RunawayReaction_Simulation_Image.png" alt="StatusBoard GUI">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Reactivity Simulations</h5>
-                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;I wrote a number of simulations for our nuclear reactor which were useful in calculating reactor specific parameters and in satisfying a question asked by the Nuclear Regulatory Committee in a Safety Analysis Report.</p>
+                <img class="card-img-top" src="Project_Pictures/Linac_Realignment_Magnet.png" alt="Realignment Magnet">
+                <div class="card-body d-flex flex-column">
+                    <div class="p-0">
+                        <h5 class="card-title text-center">LINAC Realignment Magnet</h5>
+                    </div>
+                    <div class="p-0">
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;I've designed and modeled a realignment magnet for one of the University of Maryland's linear accelerators. The magnet consists of a pair of aluminum clamps and four aluminum plates wrapped with several meters of copper wires.</p>
+                    </div>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-success float-right" href="Project_Files/Reactivity_Simulations.zip" role="button">Download This Project!</a>
+                    <a class="btn btn-success float-right" href="Project_Files/Linac_Magnet.zip" role="button">Download This Project!</a>
                 </div>
             </div>
             <div class="card border-white border-2 rounded">
@@ -165,7 +165,7 @@
             <div class="card border-white border-2 rounded">
                 <img class="card-img-top" src="Project_Pictures/Quantum_Optics_Report_Image.png" alt="StatusBoard GUI">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Quantum Information</h5>
+                    <h5 class="card-title text-center">Quantum Optics</h5>
                     <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;In this paper I discuss the application of quantum optics to encode information into a qubit through gaussian pulses. I then demonstrated how we can use Fourier analysis to predict the net result from applying a composite wavefunction of multiple pulses.</p>
                 </div>
                 <div class="card-footer">
@@ -174,19 +174,23 @@
             </div>
         </div>
     </div>
-    <br> 
-
-<!-- 
-      <h2 id="Contact_Information" class="ml-3 text-center mt-2" style="color:white">Contact Information</h2>
-      <p class="ml-3 mt-2" style="color:white"> My Contact Information.<br>I dont think I will need both this section and a designated footer.</p>    
-
-      <div class="footer" style="background-color: #D38A30; color: white; font-size:small;"> fixed-bottom
-        <div class="container text-center">
-            <p class="footer-spacing">My Contact Information and other important info</p>  
-          </div>
+      <div class="footer mt-4" style="background-color:#D38A30; color:white; font-size:15px;">
+        <div class="container"></div>
+            <div class="row ml-2 mr-2">
+                <div class="col-sm-4 mt-2 mb-2">
+                </div>
+                <div class="col-sm-4 mt-2 mb-2 text-center">
+                    <p class="footer-spacing">Thanks for visting my website!</p> 
+                </div>
+                <div class="col-sm-2 mt-2 mb-2 text-right">
+                    <p class="footer-spacing"> Email: vanselousmark@gmail.com</p>
+                </div>
+                <div class="col-sm-2 mt-2 mb-2">
+                    <p class="footer-spacing">Phone Number: 609-613-7338</p>
+                </div>
+            </div>
+        </div>
       </div>
--->
-      
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
