@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mark Van Selous's Personal Website">
+    <meta name="google-site-verification" content="3nYbeyI8Okn3QxoYsMa41S1t4tQffSCKH-7wPIdHy_M" />
     <title>Mark Van Selous</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -25,7 +27,6 @@
         .card{
             background-color:#BEBBBB;
         }
-
         @media (min-width: 767px) {
             .content-to-hide {
                 display: none;
@@ -37,10 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #D38A30;">
         <!--Nav Bar-->
         <a class="navbar-brand" href="#">Mark Van Selous</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ml-auto" id="collapsable">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Cover Letter</a>
@@ -51,12 +49,31 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#Recent_Projects">Recent Projects</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#Contact_Information">Contact Information</a>
-            </li>
             </ul>
         </div>
+        <button class="btn btn-primary mr-auto" data-target="#ContactInfo_Modal" data-toggle="modal">Contact Me!</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable" aria-controls="collapsable" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
       </nav>
+      <div class="modal fade" id="ContactInfo_Modal" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Contact Information</h4>  
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <p>Email Address: vanselousmark@gmail.com</p>
+                      <p>Phone Number: 609-613-7338</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
       <br>
       <br>
     <!--Bio-->
@@ -70,11 +87,15 @@
             <div class="col-sm-8 mt-2 text-left">
                 <p class="text-center" style="color:white; font-family:EB Garamond; font-size: 64px;">Mark  <br class="content-to-hide"> Van Selous</p>
                 <p style="color:white;">About Me</p>
+                <p style="color:white;">Welcome to my website! I am a sophomore physics and mathematics double major at the University of Maryland, College Park. I am very interested in having a career in quantum computing.</p>
+                <p style="color:white;">In my spare time, I have started designing my own quantum circuits. Most notably, I have developed a quantum error correction algorithm inspired by the concept of a "majority voting" algorithm.</p> 
+                <p style="color:white;">In the fall of 2019, I was employed by my universities radiation facilities where I completed a number of projects in python, MATLAB, and AutoCAD including simulations, interactive GUI's, and the design of lab equipment.</p>
+                <p style="color:white;">or a comprehensive overview of what I have to offer, please take a look at my resume linked below and in my header. For a first-hand look at my work, below is a short description and the source materials for six of my projects.</p>
             </div>
         </div>
     </div>
       
-    <h2 id="Recent_Projects" class="ml-3 text-center mt-2" style="color:white">Recent Projects</h2>
+    <h2 id="Recent_Projects" class="ml-3 text-center mt-2" style="color:white; padding-top: 10px;">Recent Projects</h2>
     <div class="container-fluid">
         <div class="card-deck mt-4 ml-5 mr-5 text-left">
             <div class="card border-white border-2 rounded">
