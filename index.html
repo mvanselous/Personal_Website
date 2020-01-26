@@ -23,7 +23,7 @@
             -webkit-box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
             -moz-box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
             -o-box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
-            box-shadow: 10px 12px 90px -20px rgba(0,0,0,0.75);
+            box-shadow: 10px 12px 90px -20px rgba(155, 93, 93, 0.75);
         }
         .card{
             background-color:#BEBBBB;
@@ -87,8 +87,8 @@
                 <p class="text-center" style="color:white; font-family:EB Garamond; font-size: 64px;">Mark  <br class="content-to-hide"> Van Selous</p>
                 <p style="color:white;">About Me</p>
                 <p style="color:white;">Welcome to my website! I am a sophomore physics and mathematics double major at the University of Maryland, College Park. I am very interested in having a career in quantum computing.</p>
-                <p style="color:white;">In my spare time, I have started designing my own quantum circuits. Most notably, I have developed a quantum error correction algorithm inspired by the concept of a "majority voting" algorithm.</p> 
                 <p style="color:white;">In the fall of 2019, I was employed by my universities radiation facilities where I completed a number of projects in python, MATLAB, and AutoCAD including simulations, interactive GUI's, and the design of lab equipment.</p>
+                <p style="color:white;">In my spare time, I have started designing my own quantum circuits. Most notably, I have developed a quantum error correction algorithm inspired by the concept of a "majority voting" algorithm.</p> 
                 <p style="color:white;">For a comprehensive overview of what I have to offer, please take a look at my resume linked below. For a first-hand look at my work, below is a short description and the source materials for six of my projects.</p>
                 <br>
                 <a class="btn btn-success float-left" href="MarkVanSelous_Activities_Resume.docx" role="button">Click Here For My Resume!</a>
@@ -100,7 +100,7 @@
     <!--Example Projects-->  
     <h2 id="Recent_Projects" class="ml-3 text-center mt-2" style="color:white; padding-top: 10px;">Recent Projects</h2>
     <div class="container-fluid">
-        <div class="card-deck mt-4 ml-5 mr-5 text-left">
+        <div class="card-deck mt-4 ml-2 mr-2 ml-md-5 mr-md-5 text-left">
             <div class="card border-white border-2 rounded">
                 <img class="card-img-top" src="Project_Pictures/StatusBoard_Image.png" alt="StatusBoard GUI">
                 <div class="card-body d-flex flex-column">
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-deck mt-4 ml-5 mr-5 text-left">
+        <div class="card-deck mt-4 ml-2 mr-2 ml-md-5 mr-md-5 text-left">
             <div class="card border-white border-2 rounded">
                 <img class="card-img-top" src="Project_Pictures/Linac_Realignment_Magnet.png" alt="Realignment Magnet">
                 <div class="card-body d-flex flex-column">
@@ -177,18 +177,56 @@
             </div>
         </div>
     </div>
-      <div class="footer mt-4" style="background-color:#D38A30; color:white; font-size:15px;">
+<!--Current Projects-->
+    <div class="containter border-top border-2" style="background-color: #052F5F; margin-top:25px; padding-bottom:25px;">
+        <h2 id="Recent_Projects" class="ml-3 text-center mt-2" style="color:white; padding-top: 10px;">Ongoing Project</h2>
+        <div class="row ml-4 mr-4">
+            <!--Description of Current Work-->
+            <div class="col-sm-8 mt-2 my-auto" style="color:white; padding-top: 10px;">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;I am currently working to learn about quantum error reduction. So far, I have written a prototype quantum "majority vote" algorithm and would like to both understand its sources of error and experiment with ways to mitigate it. While, in theory, taking a majority vote should improve the success rate of a quantum circuit, in practice there are number of other factors I still need to consider. Below is a brief description of the issues I identified and will like to resolve.</p>
+                <br>
+                <dl>
+                    <dt>Ordering of Qubits</dt>
+                        <dd>In a quantum computer, it is not that straightforward to make two qubits communicate with each other. In the current implementation of my algorithm, I did not consider optimizing the connectivity of entangled qubits and some deceptively simple commands required several intermediate interactions. This is certainly a significant source of error I would like to address.</dd>
+                        <br>
+                    <dt>Error from the Gates I Used</dt>
+                        <dd>Another major source of error comes from the individual quantum gates chosen to be implemented. I would like to develop a stronger intuition for the error provided by the individual quantum gates. That way I can design around them and anticipate their effects.</dd>
+                        <br>
+                    <dt>Identifying More Suitable Circuit for the Algorithm</dt>
+                        <dd>A third factor is choosing a suitable circuit to implement an error correcting algorithm. In my current test, I have run my algorithm after a simple teleportation protocol which is relatively accurate on its own. I would like to run my algorithm in a more realistic scenario.</dd>
+                        <br>
+                    <dt>Learning from Experts.</dt>
+                        <dd>Of course, there are many researchers I can learn from who have most definitely created very useful error correcting algorithms. After exploring what I can on my own, I will greatly benefit from reading about their experiences.</dd>
+                </dl>
+            </div>
+            <!--Picture Card With Caption-->
+            <div class="col-sm-4 mt-2">
+                <div class="card border-white border-2 rounded">
+                    <img class="card-img-top" src="Project_Pictures/Majority_Vote.png" alt="Example quantum circtuit from my majority vote algorithm.">
+                    <div class="card-body">
+                        <h5 class="card-title text text-center">Quantum Majority Vote</h5>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;The diagram in the screenshot above is a quantum circuit for a 9-qubit iteration of the algorithm I am working on. This sequence of interactions summarizes the information stored in the 9 qubits as a single “logical” qubit whose eigenstates represent the probability for the majority of the 9 qubits to be in one of their two superpositions.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-success float-right" href="Project_Files/Majority_Vote.zip" role="button">Download This Project!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Footer-->
+      <div class="footer" style="background-color:#D38A30; color:white; font-size:15px;">
         <div class="container"></div>
             <div class="row ml-2 mr-2">
-                <div class="col-sm-4 mt-2 mb-2">
+                <div class="col-sm-4 mt-md-2 mb-2">
                 </div>
-                <div class="col-sm-4 mt-2 mb-2 text-center">
+                <div class="col-sm-4 mb-2 mt-md-2 text-center">
                     <p class="footer-spacing">Thanks for visting my website!</p> 
                 </div>
-                <div class="col-sm-2 mt-2 mb-2 text-right">
+                <div class="col-sm-2 mt-md-2 mb-md-2 text-center">
                     <p class="footer-spacing"> Email: vanselousmark@gmail.com</p>
                 </div>
-                <div class="col-sm-2 mt-2 mb-2">
+                <div class="col-sm-2 mt-md-2 mb-md-2 text-center">
                     <p class="footer-spacing">Phone Number: 609-613-7338</p>
                 </div>
             </div>
