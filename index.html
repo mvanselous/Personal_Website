@@ -28,7 +28,10 @@
         .card{
             background-color:#BEBBBB;
         }
-
+        .card-img-top {
+            width: 100%;
+            height: 15.5vw;
+        }
         @media (min-width: 767px) {
             .content-to-hide {
                 display: none;
@@ -37,6 +40,9 @@
         .navbar {
             font-size:20px;
             margin-bottom:0px;
+        }
+        tr {
+            line-height: 0.25;
         }
     </style>
 </head>
@@ -87,17 +93,23 @@
             <div class="col-sm-8 mt-2 mb-2 text-left">
                 <p class="text-center" style="color:white; font-family:EB Garamond; font-size: 64px;">Mark  <br class="content-to-hide"> Van Selous</p>
                 <h4 style="color:white; margin-top: -1.25rem;">About Me</h4>
-                <p style="color:white;">Welcome to my website! I am a junior physics and mathematics double major at the University of Maryland, College Park.</p>
+                <p style="color:white;">Welcome to my website! I am a junior physics and mathematics double major at the University of Maryland, College Park. I am also proficient in programming with python, MATLAB, and C++. I am familar with using GIT from the command line, Unix shells, and the windows powershell (as well as more specialized distributions such as Anaconda for the Jupyter Notebook). I created this website myself via html, css, and javascript (with help from <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap</a>). Additonaly, I am conformatble with using Latex for the majority of my written assignments.</p>
                  
                 <h5 style="color:white;">Experience</h5>
-                <p style="color:white;">This summer I have been learning about data science with a focus on machine and deep learning. I am currently exploring the Kepler Exoplanet Search to develop a deep learning algorithm capable of identifying exoplanets based on the observations of nearly 10,000 exoplanet candidates collected by NASA and their Kepler telescope. I first introduced myself to data science through Google’s Machine Learning Crash Course, Stephen Boyd’s text on Convex Optimization, and a number of smaller projects I completed along the way in TensorFlow and Scikit-Learn.</p>
+                <p style="color:white;">I have been very fortunate to have worked with three research groups during my time so far in college. Most recently, I have been working with the Britton Lab within the Joint Quantum Institute to help them hopefully design a more easily scalable quantum computer using photonic qubits.</p>
                 <p style="color:white;"></p>
-                <p style="color:white;">In the fall of 2019, I was employed by the University of Maryland’s Radiation Facilities to work on our nuclear reactor and linear accelerator. With them I completed a number of projects in python, MATLAB, and AutoCAD including simulations, interactive GUI's, and the design of lab equipment. For my position, I completed a Trustworthiness and Reliability (T&R) application and also received training to operate our reactor, LINAC, and a variety of radiation detection equipment.</p> 
-                <table class="table table-borderless table-sm" style="color:white; margin-top: -1.75rem;">
+                <p style="color:white;">As a freshman, I volunteered for the <a href="https://cosmicray.umd.edu/iss-cream/">ISS-CREAM</a> research group to help troubleshoot their last balloon experiment and repair the equipment for future use.</p>
+                <p style="color:white;"></p>
+                <p style="color:white;">In the fall of 2019, I was employed by the <a href="http://radiation.umd.edu/">University of Maryland’s Radiation Facilities</a> to work on our nuclear reactor and linear accelerator. With them I completed a number of projects in python, MATLAB, and AutoCAD including simulations, interactive GUI's, and the design of lab equipment. I also completed a Trustworthiness and Reliability (T&R) application,who from, and received training to operate our reactor, LINAC, and a variety of radiation detection equipment.</p> 
+                <p style="color:white;"></p>
+                <p style="color:white;">In 2020, I first introduced myself to data science through Google’s Machine Learning Crash Course, Stephen Boyd’s text on Convex Optimization, and a number of smaller projects I completed along the way in TensorFlow and Scikit-Learn. I then used the <a href="https://www.kaggle.com/nasa/kepler-exoplanet-search-results">Kepler Exoplanet Search</a> to develop a deep learning algorithm capable of identifying exoplanets based on the observations of nearly 10,000 exoplanet candidates collected by NASA and their Kepler telescope.</p>
+                <p style="color:white;"></p>
+                <p style="color:white;">This winter, I used a Raspberry Pi to broaden the scope my programming abilities. So far I have completed projects teaching me about API’s, web scraping, threading, and GPIO programming (among others). It is exciting to see rapid improvements to my programming fluency and ability to quickly pick up new packages to implement in my projects.</p>
+                <table class="table table-borderless table-sm" style="color:white; margin-top: -0.5rem;">
                 <tbody>
                     <th>
                         <h5>
-                            Current Upper Level Coursework
+                            Completed Upper Level Coursework
                         </h5>
                     </th>
                     <tr>
@@ -118,12 +130,7 @@
                         <td>
                             <ul><li>Theory and Methods of Statistics</li></ul>
                         </td>
-                    </tr>>
-                    <th>
-                        <h5>
-                            Completed Upper Level Coursework
-                        </h5>
-                    </th>
+                    </tr>
                     <tr>
                         <td>
                             <ul><li>Complex Variables</li></ul>
@@ -142,11 +149,15 @@
                         <td>
                             <ul><li>Modern Physics</li></ul>
                         </td>
+                        <td>
+                            <ul><li>Convex Optimization</li></ul>
+                        </td>
                     </tr>                    
                 </tbody>
                 </table>
-                <p style="color:white; margin-top: -1.25rem;">For a comprehensive overview of what I have to offer, please take a look at my resume linked below. For a first-hand look at my work, below is a short description and the source materials for six of my projects.</p>
+                <p style="color:white; margin-top: -1.25rem;">Please take a look at my resume linked below. The second link is to a github repository containing the projects I have completed the last several weeks. Finally, below are nine of my past projects I completed for research groups at UMD, my classes, and for my Boy Scout eagle project.</p>
                 <a class="btn btn-success float-left" href="MarkVanSelous_ActivitiesResume_General.pdf" role="button">Click Here For My Resume!</a>
+                <a class="btn btn-success disabled" role="button" style= "margin-left:1.25rem">Click Here to Visit my Raspberry Pi Repository! (Coming on January 5th, 2021)</a>
                 <br class="content-to-hide">
                 <br class="content-to-hide">
             </div>
@@ -156,6 +167,30 @@
     <h2 id="Recent_Projects" class="ml-3 text-center mt-2" style="color:white; padding-top: 10px;">Recent Projects</h2>
     <div class="container-fluid">
         <div class="card-deck mt-4 ml-2 mr-2 ml-md-5 mr-md-5 text-left">
+            <div class="card border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/2D Ising Model.png" alt="2D Ising Model">
+                <div class="card-body d-flex flex-column">
+                    <div class="p-0">
+                        <h5 class="card-title text-center">2D Ising Model</h5>
+                    </div>
+                    <div class="p-0">
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;For this report and programming assignment, I recreated the 2D Ising Model from thermodynamics and used the Metropolis–Hastings algorithm to solve for the system's average energy and magnetization after thermalization.</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/2D_Ising_Model.zip" role="button">Download This Project!</a>
+                </div>
+            </div>
+            <div class="card border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/WaveletAnalysis_Img.png" alt="StatusBoard GUI">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Wavelet Analysis</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp; In the fall of 2020, I briefly assisted the Britton Lab in the Joint Quantum Institute to help them learn about and predict the thermal drift in their prototype quantum computer. I did so by performing wavelet analysis with a complex morlet wavelet. In particular, I made use of the <a href="https://github.com/PyWavelets/pywt">PyWavelets</a> and <a href="https://github.com/alsauve/scaleogram">Scaleogram</a> packages for python.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-success float-right" href="Project_Files/Reactivity_Simulations.zip" role="button">View in Google Colab!</a>
+                </div>
+            </div>
             <div class="card border-white border-2 rounded">
                 <img class="card-img-top" src="Project_Pictures/StatusBoard_Image.png" alt="StatusBoard GUI">
                 <div class="card-body d-flex flex-column">
@@ -170,6 +205,9 @@
                     <a class="btn btn-success float-right" href="Project_Files/StatusBoard.zip" role="button">Download This Project!</a>
                 </div>
             </div>
+        </div>
+        <!-- Mid Deck -->
+        <div class="card-deck mt-4 ml-2 mr-2 ml-md-5 mr-md-5 text-left">
             <div class="card border-white border-2 rounded">
                 <img class="card-img-top" src="Project_Pictures/RunawayReaction_Simulation_Image.png" alt="StatusBoard GUI">
                 <div class="card-body">
@@ -194,8 +232,6 @@
                     <a class="btn btn-success float-right" href="Project_Files/Integral_Worth_Curve_GUI.mlapp" role="button">Download This Project!</a>
                 </div>
             </div>
-        </div>
-        <div class="card-deck mt-4 ml-2 mr-2 ml-md-5 mr-md-5 text-left">
             <div class="card border-white border-2 rounded">
                 <img class="card-img-top" src="Project_Pictures/Linac_Realignment_Magnet.png" alt="Realignment Magnet">
                 <div class="card-body d-flex flex-column">
@@ -210,6 +246,9 @@
                     <a class="btn btn-success float-right" href="Project_Files/Linac_Magnet.zip" role="button">Download This Project!</a>
                 </div>
             </div>
+        </div>
+        <!-- New Deck -->
+        <div class="card-deck mt-4 ml-2 mr-2 ml-md-5 mr-md-5 text-left">
             <div class="card border-white border-2 rounded">
                 <img class="card-img-top" src="Project_Pictures/QC_BV_Circuit.png" alt="Realignment Magnet">
                 <div class="card-body">
@@ -230,14 +269,20 @@
                     <a class="btn btn-success float-right" href="Project_Files/Quantum_Optics.zip" role="button">Download This Project!</a>
                 </div>
             </div>
+            <div class="card border-white border-2 rounded">
+                <img class="card-img-top" src="Project_Pictures/EagleProject.jpg" alt="Eagle Projet Rabies Tables">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Eagle Scout, Boy Scout Troop 1776 Titusville NJ</h5>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;For my eagle project, I designed and built three "rabies tables" to help my local communities with their rabies clinics. The steps themselves were made out of Type 2 PVC with waterproof stained plywood and an astroturf cover. I had my design approved by a local civil engineer to verify the design's integrity and longevity. The picture above is of one of the rabies tables about to be used at a spring 2020 rabies clinic four years after the project's completion.</p>
+                </div>
+            </div>
         </div>
     </div>
 <!--Footer-->
-      <div class="footer" style="background-color:#D38A30; color:white; font-size:15px; margin-top: 15px;">
+    <div class="footer" style="background-color:#D38A30; color:white; font-size:15px; margin-top: 15px;">
         <div class="container"></div>
             <div class="row ml-2 mr-2">
-                <div class="col-sm-4 mt-md-2 mb-2">
-                </div>
+                <div class="col-sm-4 mt-md-2 mb-2"> </div>
                 <div class="col-sm-4 mb-2 mt-md-2 text-center">
                     <p class="footer-spacing">Thanks for visting my website!</p> 
                 </div>
@@ -249,9 +294,9 @@
                 </div>
             </div>
         </div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
